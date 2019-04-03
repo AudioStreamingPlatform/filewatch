@@ -414,7 +414,6 @@ namespace filewatch {
 			{
 				throw std::system_error(errno, std::system_category());
 			}
-			const auto listen_filters = _listen_filters;
 
 			_watching_single_file = is_file(path);
 
